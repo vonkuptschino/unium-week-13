@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Гречинs библиотеки</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="csspin.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+	
+	<style type="text/css">
+		input[type='range']::-webkit-slider-runnable-track {
+		  width: 100%;
+		  height: 8px;
+		  transition: 0.2s;
+		  background: #fff;
+		  border-radius: 3px;
+		}
+		input[type='range']::-webkit-slider-thumb {
+		  box-shadow: 0px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+		  height: 20px;
+		  width: 20px;
+		  border-radius: 50%;
+		  background: #aaa;
+		  -webkit-appearance: none;
+		  margin-top: -7px;
+		}
+
+		fieldset{
+			-webkit-box-shadow: 80px 43px 13px -15px rgba(0,0,0,0.75);
+			-moz-box-shadow: 80px 43px 13px -15px rgba(0,0,0,0.75);
+			box-shadow: 80px 43px 13px -15px rgba(0,0,0,0.75);
+		}
+
+				/* .squaredThree */
+		.squaredThree {
+		  width: 200px;
+		  position: relative;
+		  margin: 40px auto;
+		  border: 1px solid black;
+		}
+		.squaredThree label {
+
+		  width: 20px;
+		  height: 20px;
+		  cursor: pointer;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+		  border-radius: 4px;
+		  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+		}
+		.squaredThree label:after {
+		  content: '';
+		  width: 9px;
+		  height: 5px;
+		  position: absolute;
+		  top: 4px;
+		  left: 4px;
+		  border: 3px solid #fcfff4;
+		  border-top: none;
+		  border-right: none;
+		  background: transparent;
+		  opacity: 0;
+		  -webkit-transform: rotate(-45deg);
+		          transform: rotate(-45deg);
+		}
+		.squaredThree label:hover::after {
+		  opacity: 0.3;
+		}
+		.squaredThree input[type=checkbox] {
+		  visibility: hidden;
+		}
+		.squaredThree input[type=checkbox]:checked + label:after {
+		  opacity: 1;
+		}
+
+		/* end .squaredThree */
+		
+	</style>
+</head>
+<body>
+<h3>Typography</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum
+      hendrerit velit, quis ullamcorper sem congue ac. Quisque id magna rhoncus,
+      sodales massa vel, vestibulum elit. Duis ornare accumsan egestas. 
+      <strong>This is strong,</strong> this is normal,
+      <b>this is just bold,</b> <em>and this is emphasized!</em> And heck,
+      <a href='/'>here</a>'s a link.
+    </p>
+
+    <blockquote
+      cite='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote'
+    >
+      'The HTML blockquote Element (or HTML Block Quotation Element) indicates
+      that the enclosed text is an extended quotation. Usually, this is rendered
+      visually by indentation (see
+      <a
+        href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes'
+        >Notes</a
+      >
+      for how to change it). A URL for the source of the quotation may be given
+      using the
+      <code>cite</code> attribute, while a text representation of the source can
+      be given using the <code>&lt;cite&gt;</code> cite element.'
+
+      <footer>
+        <cite>MDN, 'The Block Quotation element'</cite>
+      </footer>
+    </blockquote>
+
+    <q>Quotes (&lt;q&gt;) share the same style as blockquotes.</q>
+
+    <p>Use &lt;mark&gt; to <mark>highlight the important stuff</mark>.</p>
+
+    <ul>
+      <li>Unordered list item 1</li>
+      <li>Unordered list item 2</li>
+      <li>Unordered list item 3</li>
+    </ul>
+    <ol>
+      <li>Ordered list item 1</li>
+      <li>Ordered list item 2</li>
+      <li>Ordered list item 3</li>
+    </ol>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>The details and summary tag</p>
+
+      <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Godzilla</td>
+          <td>2</td>
+          <td>$299.99</td>
+        </tr>
+        <tr>
+          <td>Mozilla</td>
+          <td>10</td>
+          <td>$100,000.00</td>
+        </tr>
+        <tr>
+          <td>Quesadilla</td>
+          <td>1</td>
+          <td>$2.22</td>
+        </tr>
+      </tbody>
+    </table>
+     <h3>Form elements</h3>
+    <form>
+    	<label>Choose a Doe:</label>
+         	<br/>
+         	<div class="pretty p-switch p-fill">
+		        <input type="checkbox" />
+		        <div class="state">
+		            <label>Jane</label>
+		        </div>
+		    </div><br/>
+		    <div class="pretty p-default p-curve">
+		        <input type="checkbox" />
+		        <div class="state">
+		            <label>John</label>
+		        </div>
+		    </div>
+
+
+		<fieldset>
+	        <legend>Music</legend>
+
+	      <div>
+	      	<div class="cp-spinner cp-heart"></div>
+	      	<i class="fa fa-bandcamp" aria-hidden="true"></i><a href="#">Listen on Bandcamp</a><br/>
+	        <label for='volume'>Volume</label>
+	        <input type='range' name='volume' id='volume' min='0' max='11' />
+	      </div>
+	    </fieldset>
+	    <br/><br/><br/>
+      <label for='id'>User id (read only)</label>
+      <input readonly name='id' id='id' value='04D6H89Z' />
+
+      <label for='disabled'>Random disabled input</label>
+      <input
+        disabled
+        name='disabled'
+        id='disabled'
+        placeholder='Because why not?'
+      />
+
+    
+    </form>
+</body>
+</html>
