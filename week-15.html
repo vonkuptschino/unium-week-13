@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 15</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+.inner {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  will-change: transform;
+  animation: rotator 1s linear infinite;
+}
+
+.inner:first-child {
+  background-color: #FBC02D;
+  transform-origin: 50% 100%;
+}
+
+.inner:nth-child(2) {
+  background-color: #00796B;
+  transform-origin: 50% 0;
+}
+
+@keyframes rotator {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+	
+	</style>
+</head>
+<body>
+	<div class="outer">
+  <div class="inner"></div>
+  <div class="inner"></div>
+</div>
+</body>
+</html>
